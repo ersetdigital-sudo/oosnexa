@@ -15,7 +15,8 @@ Landing page only — no database, no backend API, no external credentials.
 - Run: `docker compose -f docker-compose.base44.yml up -d --build` (host port 3000).
 - Dependencies install on container start (`npm ci`) into a named volume; the repo is
   bind-mounted, so edits hot-reload. Config changes (`next.config.ts`) make the dev
-  server restart itself.
+  server restart itself — do NOT `docker compose restart web` afterwards; killing the
+  process makes npm log a harmless but noisy `SIGTERM`/`command failed` block.
 - The page content is not JSX: `app/**/page.tsx` reads `content/**/*.html` from disk with
   `readFileSync` and injects it via `dangerouslySetInnerHTML`. Editing those HTML files
   changes the page; the JSON-LD comes from the matching `*.schema.json`.
