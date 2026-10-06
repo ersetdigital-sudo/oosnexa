@@ -11,13 +11,11 @@ export default function HomeCta() {
         <div className="cta-box cta-hero">
           <div className="cta-hero-main rv">
             <h2 id="cta">
-              Punya Ide Sistem atau Masalah yang <em>Ingin Dibereskan?</em>
+              Butuh Sistem Digital untuk <em>Bisnis?</em>
             </h2>
             <p>
-              Tidak perlu tahu istilah teknis. Cukup jelaskan bisnis Anda, bagaimana
-              prosesnya berjalan sekarang, dan bagian mana yang masih terasa merepotkan.
-              Kami akan membantu melihat kebutuhan tersebut dari sisi sistem dan
-              menentukan langkah yang masuk akal untuk dikerjakan.
+              Ceritakan kebutuhan bisnis Anda. OOS NEXA membantu membangun website, web
+              app, dan sistem bisnis sesuai kebutuhan dan alur kerja Anda.
             </p>
             <div className="ctas">
               <a href="#" className="btn btn-p wa-cta">
