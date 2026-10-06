@@ -1,11 +1,37 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
+import { breadcrumb, withAbsoluteUrls } from "@/lib/jsonld";
 
 const SOURCE_URL = "https://surya32.vercel.app/laptop-store";
 
 export const metadata = {
-  title: "Studi Kasus Laptop Store Management System | OOS NEXA | Jasa Pembuatan Sistem Digital Bisnis",
+  title: "Studi Kasus Laptop Store Management System | OOS NEXA",
+  description:
+    "Studi kasus sistem POS dan inventory: servis, jual-beli unit, dan stok dalam satu dashboard, lengkap dengan nota PDF ke WhatsApp dan laporan laba bersih.",
+  alternates: { canonical: "/portofolio/laptop-store" },
+  openGraph: {
+    title: "Studi Kasus Laptop Store Management System | OOS NEXA",
+    description:
+      "Servis, jual-beli unit, dan stok barang dalam satu dashboard, dengan nota PDF ke WhatsApp dan laporan laba bersih.",
+    url: "/portofolio/laptop-store",
+    type: "article",
+    locale: "id_ID",
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
+  },
 };
+
+const ld = breadcrumb([
+  { name: "Home", path: "/" },
+  { name: "Portofolio", path: "/portofolio" },
+  { name: "Laptop Store Management System", path: "/portofolio/laptop-store" },
+]);
 
 export default function LaptopStoreCaseStudyPage() {
   return (
@@ -310,6 +336,10 @@ export default function LaptopStoreCaseStudyPage() {
           </div>
         </section>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withAbsoluteUrls(ld)) }}
+      />
     </>
   );
 }

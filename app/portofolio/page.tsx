@@ -1,9 +1,34 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
+import { breadcrumb, withAbsoluteUrls } from "@/lib/jsonld";
 
 export const metadata = {
   title: "Portofolio | OOS NEXA | Jasa Pembuatan Sistem Digital Bisnis",
+  description:
+    "Eksplorasi berbagai solusi digital yang kami bangun untuk membantu bisnis berkembang — sistem operasional, POS dan inventory, dashboard, dan e-commerce.",
+  alternates: { canonical: "/portofolio" },
+  openGraph: {
+    title: "Portofolio | OOS NEXA",
+    description:
+      "Eksplorasi berbagai solusi digital yang kami bangun untuk membantu bisnis berkembang.",
+    url: "/portofolio",
+    type: "website",
+    locale: "id_ID",
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
+  },
 };
+
+const ld = breadcrumb([
+  { name: "Home", path: "/" },
+  { name: "Portofolio", path: "/portofolio" },
+]);
 
 export default function PortfolioPage() {
   return (
@@ -141,6 +166,10 @@ export default function PortfolioPage() {
           </div>
         </section>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withAbsoluteUrls(ld)) }}
+      />
     </>
   );
 }

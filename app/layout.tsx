@@ -15,7 +15,14 @@ export const metadata: Metadata = {
       "Website, POS, inventory, dashboard, CRM, dan sistem bisnis custom yang dibuat sesuai kebutuhan bisnis Anda.",
     type: "website",
     locale: "id_ID",
-    images: [{ url: "/images/logo-on.png", width: 1679, height: 937 }],
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -29,17 +36,15 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
           rel="stylesheet"
         />
         {/* icon: Next auto-generate dari app/icon.svg */}
         <link
           rel="apple-touch-icon"
-          href="/images/Favicon.png"
+          href="/images/apple-touch-icon-180.png"
+          sizes="180x180"
         />
-        {/* static Google Fonts fallback kept inline */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <style data-moda-export-fonts="true">{fontFaceStyles}</style>
       </head>
       <body>
@@ -52,39 +57,17 @@ export default function RootLayout({
 }
 
 
+/* Hanya weight yang dipakai CSS (audit: Inter 400/500/600/700 + italic;
+ * Plus Jakarta Sans 600/700/800 — heading selalu PJS). Sisanya dihapus. */
 const fontFaceStyles = `
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-thin.ttf') format('truetype'); font-style: normal; font-weight: 100; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-thinitalic.ttf') format('truetype'); font-style: italic; font-weight: 100; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-extralight.ttf') format('truetype'); font-style: normal; font-weight: 200; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-extralightitalic.ttf') format('truetype'); font-style: italic; font-weight: 200; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-light.ttf') format('truetype'); font-style: normal; font-weight: 300; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-lightitalic.ttf') format('truetype'); font-style: italic; font-weight: 300; font-display: swap; }
 @font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
 @font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-italic.ttf') format('truetype'); font-style: italic; font-weight: 400; font-display: swap; }
 @font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-mediumitalic.ttf') format('truetype'); font-style: italic; font-weight: 500; font-display: swap; }
 @font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-semibold.ttf') format('truetype'); font-style: normal; font-weight: 600; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-semibolditalic.ttf') format('truetype'); font-style: italic; font-weight: 600; font-display: swap; }
 @font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-bold.ttf') format('truetype'); font-style: normal; font-weight: 700; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-bolditalic.ttf') format('truetype'); font-style: italic; font-weight: 700; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-extrabold.ttf') format('truetype'); font-style: normal; font-weight: 800; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-extrabolditalic.ttf') format('truetype'); font-style: italic; font-weight: 800; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-black.ttf') format('truetype'); font-style: normal; font-weight: 900; font-display: swap; }
-@font-face { font-family: 'Inter'; src: url('/fonts/inter_24pt-blackitalic.ttf') format('truetype'); font-style: italic; font-weight: 900; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-extralight.ttf') format('truetype'); font-style: normal; font-weight: 200; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-extralightitalic.ttf') format('truetype'); font-style: italic; font-weight: 200; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-light.ttf') format('truetype'); font-style: normal; font-weight: 300; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-lightitalic.ttf') format('truetype'); font-style: italic; font-weight: 300; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-italic.ttf') format('truetype'); font-style: italic; font-weight: 400; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-mediumitalic.ttf') format('truetype'); font-style: italic; font-weight: 500; font-display: swap; }
 @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-semibold.ttf') format('truetype'); font-style: normal; font-weight: 600; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-semibolditalic.ttf') format('truetype'); font-style: italic; font-weight: 600; font-display: swap; }
 @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-bold.ttf') format('truetype'); font-style: normal; font-weight: 700; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-bolditalic.ttf') format('truetype'); font-style: italic; font-weight: 700; font-display: swap; }
 @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-extrabold.ttf') format('truetype'); font-style: normal; font-weight: 800; font-display: swap; }
-@font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/plusjakartasans-extrabolditalic.ttf') format('truetype'); font-style: italic; font-weight: 800; font-display: swap; }
 `;
 
 function FooterGlobal() {

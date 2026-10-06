@@ -1,0 +1,34 @@
+# OOS NEXA
+
+> OOS NEXA membangun website, sistem POS dan inventory, business dashboard, CRM, toko online, landing page, custom web app, serta integrasi API sesuai alur kerja bisnis Anda. Tagline: Build Better Grow Smarter.
+
+Situs berbahasa Indonesia. Setiap halaman layanan memuat FAQ, cakupan, dan alur pengerjaan.
+
+## Layanan
+
+- [Indeks Layanan](https://oosnexa.com/layanan) — daftar lengkap layanan OOS NEXA
+- [Jasa Pembuatan Website Custom](https://oosnexa.com/layanan/jasa-pembuatan-website-custom) — desain, struktur, dan fitur disusun sesuai kebutuhan bisnis
+- [Custom Web App](https://oosnexa.com/layanan/custom-web-app) — web app dengan workflow mengikuti cara kerja bisnis
+- [Sistem POS dan Inventory](https://oosnexa.com/layanan/sistem-pos-inventory) — kasir, stok, dan laporan dalam satu sistem
+- [Business Dashboard](https://oosnexa.com/layanan/business-dashboard) — pantau kondisi bisnis dari satu dashboard
+- [CRM](https://oosnexa.com/layanan/crm) — data pelanggan, pipeline penjualan, dan follow-up
+- [Toko Online Custom](https://oosnexa.com/layanan/toko-online-custom) — toko online milik sendiri tanpa komisi platform
+- [Landing Page](https://oosnexa.com/layanan/landing-page) — satu halaman fokus untuk iklan dan promosi
+- [Integrasi API dan Automasi](https://oosnexa.com/layanan/integrasi-api-automasi) — hubungkan sistem dan otomasi pekerjaan repetitif
+
+## Portofolio
+
+- [Portofolio](https://oosnexa.com/portofolio) — kumpulan studi kasus
+- [Erlangga Rental Mobil](https://oosnexa.com/portofolio/erlangga-rental) — sistem operasional rental mobil (rahasia klien: tanpa tampilan sistem)
+- [Laptop Store Management System](https://oosnexa.com/portofolio/laptop-store) — POS dan inventory untuk lini servis, jual-beli, dan stok
+- [SAMAQU](https://oosnexa.com/portofolio/samaqu) — platform e-commerce menswear muslim
+- [UT Majene](https://oosnexa.com/portofolio/ut-majene) — dashboard monitoring registrasi mahasiswa (rahasia klien: tanpa tampilan sistem)
+
+## Perusahaan
+
+- [Beranda](https://oosnexa.com/) — ringkasan layanan dan ajakan konsultasi
+- [Tentang Kami](https://oosnexa.com/tentang-kami) — cara kerja dan pendekatan OOS NEXA
+
+## Kontak
+
+Konsultasi gratis tersedia lewat tombol WhatsApp di setiap halaman (CTA "Konsultasi Gratis").

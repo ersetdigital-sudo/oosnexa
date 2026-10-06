@@ -1,9 +1,35 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
+import { breadcrumb, withAbsoluteUrls } from "@/lib/jsonld";
 
 export const metadata = {
-  title: "Studi Kasus SAMAQU | OOS NEXA | Jasa Pembuatan Sistem Digital Bisnis",
+  title: "Studi Kasus SAMAQU | OOS NEXA",
+  description:
+    "Studi kasus platform e-commerce menswear muslim: katalog bertingkat, harga fleksibel, checkout, verifikasi pembayaran, dan pengiriman multi-kurir.",
+  alternates: { canonical: "/portofolio/samaqu" },
+  openGraph: {
+    title: "Studi Kasus SAMAQU | OOS NEXA",
+    description:
+      "Katalog bertingkat, harga fleksibel, checkout, verifikasi pembayaran, dan pengiriman multi-kurir.",
+    url: "/portofolio/samaqu",
+    type: "article",
+    locale: "id_ID",
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
+  },
 };
+
+const ld = breadcrumb([
+  { name: "Home", path: "/" },
+  { name: "Portofolio", path: "/portofolio" },
+  { name: "SAMAQU", path: "/portofolio/samaqu" },
+]);
 
 export default function SamaquCaseStudyPage() {
   return (
@@ -323,6 +349,10 @@ export default function SamaquCaseStudyPage() {
           </div>
         </section>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withAbsoluteUrls(ld)) }}
+      />
     </>
   );
 }

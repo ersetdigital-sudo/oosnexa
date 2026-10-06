@@ -23,3 +23,21 @@ export function withAbsoluteUrls<T>(value: T): T {
   }
   return value;
 }
+
+/**
+ * BreadcrumbList sederhana (posisi urut dari array).
+ * Dipakai halaman portofolio & studi kasus — item path relatif,
+ * di-absolute-kan dengan withAbsoluteUrls saat render.
+ */
+export function breadcrumb(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      item: it.path,
+    })),
+  };
+}

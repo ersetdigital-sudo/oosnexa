@@ -1,10 +1,36 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import CaseCover from "@/components/CaseCover";
+import { breadcrumb, withAbsoluteUrls } from "@/lib/jsonld";
 
 export const metadata = {
-  title: "Studi Kasus UT Majene | OOS NEXA | Jasa Pembuatan Sistem Digital Bisnis",
+  title: "Studi Kasus UT Majene | OOS NEXA",
+  description:
+    "Studi kasus dashboard monitoring registrasi mahasiswa: mengubah file Excel menjadi data pipeline, dashboard analitik, dan sistem laporan berbasis web.",
+  alternates: { canonical: "/portofolio/ut-majene" },
+  openGraph: {
+    title: "Studi Kasus UT Majene | OOS NEXA",
+    description:
+      "Mengubah tumpukan file Excel menjadi data pipeline, dashboard analitik, dan sistem laporan berbasis web.",
+    url: "/portofolio/ut-majene",
+    type: "article",
+    locale: "id_ID",
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
+  },
 };
+
+const ld = breadcrumb([
+  { name: "Home", path: "/" },
+  { name: "Portofolio", path: "/portofolio" },
+  { name: "UT Majene", path: "/portofolio/ut-majene" },
+]);
 
 export default function UTMajeneCaseStudyPage() {
   return (
@@ -252,6 +278,10 @@ export default function UTMajeneCaseStudyPage() {
           </div>
         </section>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withAbsoluteUrls(ld)) }}
+      />
     </>
   );
 }

@@ -21,7 +21,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     siteName: "OOS NEXA",
-    images: [{ url: "/images/logo-on.png", width: 1679, height: 937 }],
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
   },
   twitter: { card: "summary_large_image" },
 };

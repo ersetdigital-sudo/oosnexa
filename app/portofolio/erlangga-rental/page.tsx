@@ -1,10 +1,36 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import CaseCover from "@/components/CaseCover";
+import { breadcrumb, withAbsoluteUrls } from "@/lib/jsonld";
 
 export const metadata = {
-  title: "Studi Kasus Erlangga Rental Mobil | OOS NEXA | Jasa Pembuatan Sistem Digital Bisnis",
+  title: "Studi Kasus Erlangga Rental Mobil | OOS NEXA",
+  description:
+    "Studi kasus sistem operasional rental mobil: booking, kontrak sewa, nota thermal, dan laporan keuangan bulanan dalam satu sistem yang dipakai dari HP.",
+  alternates: { canonical: "/portofolio/erlangga-rental" },
+  openGraph: {
+    title: "Studi Kasus Erlangga Rental Mobil | OOS NEXA",
+    description:
+      "Booking, kontrak sewa, nota thermal, dan laporan keuangan bulanan dalam satu sistem yang dipakai langsung dari HP di lapangan.",
+    url: "/portofolio/erlangga-rental",
+    type: "article",
+    locale: "id_ID",
+    images: [
+      {
+        url: "/images/og-1200x630.png",
+        width: 1200,
+        height: 630,
+        alt: "OOS NEXA — Build Better Grow Smarter",
+      },
+    ],
+  },
 };
+
+const ld = breadcrumb([
+  { name: "Home", path: "/" },
+  { name: "Portofolio", path: "/portofolio" },
+  { name: "Erlangga Rental Mobil", path: "/portofolio/erlangga-rental" },
+]);
 
 export default function ErlanggaRentalCaseStudyPage() {
   return (
@@ -277,6 +303,10 @@ export default function ErlanggaRentalCaseStudyPage() {
           </div>
         </section>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withAbsoluteUrls(ld)) }}
+      />
     </>
   );
 }
