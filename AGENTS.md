@@ -19,9 +19,12 @@ Landing page only — no database, no backend API, no external credentials.
   process makes npm log a harmless but noisy `SIGTERM`/`command failed` block.
 - The page content is not JSX: `app/**/page.tsx` reads `content/**/*.html` from disk with
   `readFileSync` at MODULE scope and injects it via `dangerouslySetInnerHTML`. Those reads are
-  not in the module graph, so editing `content/**/*.html` (or `*.schema.json`) does NOT hot-reload —
-  run `docker compose -f docker-compose.base44.yml restart web` after such edits. Editing
-  `app/**/*.tsx` or `app/page.css` DOES hot-reload normally.
+  not in the module graph, so editing `content/**/*.html` (or `*.schema.json`) does NOT hot-reload
+  (touching `app/page.tsx` does not help either). To pick such an edit up, force the dev server's
+  own clean self-restart: `docker compose -f docker-compose.base44.yml exec -T web sh -c 'touch next.config.ts'`
+  then wait ~20s and curl the page. Do NOT use `docker compose restart web` for this — it kills npm
+  with SIGTERM and writes an `npm error ... signal SIGTERM` block that trips log-based error checks.
+  Editing `app/**/*.tsx` or `app/page.css` DOES hot-reload normally.
 - `allowedDevOrigins` in `next.config.ts` uses `BASE44_PUBLIC_HOST_SUFFIX` (injected by
   compose) so the preview origin can load dev assets/HMR. Restart the service after editing it.
 - Only env var is optional `NEXT_PUBLIC_SITE_URL` (`lib/site.ts`); it defaults to the
