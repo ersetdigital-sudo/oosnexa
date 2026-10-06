@@ -29,5 +29,17 @@ Landing page only — no database, no backend API, no external credentials.
   compose) so the preview origin can load dev assets/HMR. Restart the service after editing it.
 - Only env var is optional `NEXT_PUBLIC_SITE_URL` (`lib/site.ts`); it defaults to the
   production domain, so leave it unset in dev.
+- Motion/scroll reveal lives in `app/page.css`: `.rv` (+ `.in` from the IntersectionObserver in
+  `components/ClientScripts.tsx`) for grid/list children, and a CSS scroll-driven `rvUp`
+  animation (`animation-timeline: view()`) for section headers/blocks that have no `.rv`.
+  Two traps worth knowing:
+  - `body` must use `overflow-x: clip`, NOT `hidden`. `hidden` turns body into a scroll
+    container, so every `view()` timeline resolves against a body that never scrolls and the
+    animation silently freezes mid-fade.
+  - The preview browser reports `prefers-reduced-motion: reduce`, and page.css kills all
+    *transitions* in that mode — so the `.rv` reveal is invisible there. The `rvUp` animation
+    still runs (animations are not affected by `transition: none`), with `--rv-y: 0` so it is a
+    pure fade. Verify reveals with `el.getAnimations()` / computed opacity while scrolling, not
+    by eyeballing a screenshot.
 - Verify: `curl -s -o /dev/null -w '%{http_code}' http://localhost:3000/` → 200.
 
