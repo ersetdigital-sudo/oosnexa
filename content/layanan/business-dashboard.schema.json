@@ -1,0 +1,91 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Business Dashboard"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Pembuatan Business Dashboard",
+      "provider": {
+        "@type": "Organization",
+        "name": "OOS NEXA"
+      },
+      "areaServed": "ID"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu business dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Business dashboard adalah tampilan yang merangkum data penting bisnis, seperti penjualan, stok, atau kinerja operasional, dalam bentuk angka dan grafik yang mudah dipantau di satu tempat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya dashboard custom dengan laporan spreadsheet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spreadsheet perlu diperbarui dan digabung secara manual. Dashboard custom mengambil data langsung dari sumbernya, sehingga angka selalu terbarui dan tampilannya konsisten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Data dari mana saja yang bisa ditampilkan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Data dapat diambil dari database, spreadsheet, sistem POS, toko online, atau sistem lain yang menyediakan akses data. Kemungkinan integrasinya dicek pada tahap analisis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah dashboard bisa diakses dari HP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Dashboard dibuat responsif agar tetap nyaman dipantau dari ponsel maupun desktop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan business dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung jumlah sumber data, metrik, dan kompleksitas tampilan. Estimasi disampaikan setelah kebutuhan cukup jelas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa dibuat bersama sistem POS atau CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Dashboard dapat menjadi bagian dari sistem POS, CRM, atau web app custom, sehingga data operasional langsung tampil sebagai ringkasan."
+          }
+        }
+      ]
+    }
+  ]
+}

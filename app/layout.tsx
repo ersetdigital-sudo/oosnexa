@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "Website, POS, inventory, dashboard, CRM, dan sistem bisnis custom yang dibuat sesuai kebutuhan bisnis Anda.",
     type: "website",
     locale: "id_ID",
-    images: [{ url: "/api/v2/images/ref/2acebc35-9e60-470d-9279-813f33d60f4f?v=ea032d0f8bc9dc33", width: 1200, height: 640 }],
+    images: [{ url: "/images/logo-on.png", width: 1679, height: 937 }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -109,7 +109,7 @@ function FooterGlobal() {
             <h4>Navigasi</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/#layanan">Layanan</Link></li>
+              <li><Link href="/layanan">Layanan</Link></li>
               <li><Link href="/portofolio">Portofolio</Link></li>
               <li><Link href="/tentang-kami">Tentang Kami</Link></li>
             </ul>

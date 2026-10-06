@@ -1,0 +1,81 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Integrasi API & Automasi"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Berapa lama pengerjaan integrasi API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tergantung jumlah sistem yang dihubungkan, kelengkapan dokumentasi API, dan kompleksitas alurnya. Perkiraan waktu kami sampaikan setelah tahap analisis, saat kebutuhannya sudah jelas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa menggunakan sistem yang sudah ada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Umumnya bisa. Kami mulai dari sistem yang sudah Anda pakai, lalu mengecek apakah sistem tersebut menyediakan API, webhook, atau akses database. Jika aksesnya terbatas, kami diskusikan alternatif yang paling masuk akal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana keamanan data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kami menerapkan praktik standar seperti koneksi terenkripsi, penyimpanan kredensial yang terpisah, dan akses sesuai kebutuhan. Tidak ada sistem yang bebas risiko, jadi kami juga menyiapkan log dan monitoring agar masalah cepat terdeteksi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah integrasi bisa ditambah nanti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Integrasi dirancang bertahap, sehingga Anda dapat mulai dari alur yang paling mendesak lalu menambahkan koneksi baru seiring kebutuhan bisnis berkembang."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa yang dibutuhkan di awal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cukup gambaran sistem yang digunakan, proses yang masih manual, dan hasil yang diinginkan. Jika tersedia, akses atau dokumentasi API dari tiap sistem akan mempercepat analisis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana proses konsultasinya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anda menceritakan kondisi saat ini, lalu kami bantu memetakan bagian mana yang bisa diintegrasikan. Setelah itu kami sampaikan rekomendasi langkah dan ruang lingkup pekerjaannya."
+          }
+        }
+      ]
+    }
+  ]
+}

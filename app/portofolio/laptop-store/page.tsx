@@ -56,7 +56,7 @@ export default function LaptopStoreCaseStudyPage() {
                 alt="Dashboard Laptop Store Management System"
               />
             </div>
-            <p className="dm-note">Screenshot asli dari aplikasi.</p>
+            <p className="dm-note">Screenshot asli dari sistem.</p>
           </div>
         </section>
 
@@ -240,7 +240,7 @@ export default function LaptopStoreCaseStudyPage() {
                 <h3>Dokumen PDF</h3>
                 <p>
                   Nota servis, kwitansi supplier, invoice penjualan, dan laporan digenerate
-                  langsung dari aplikasi.
+                  langsung dari sistem.
                 </p>
               </div>
               <div className="cs-card reveal">

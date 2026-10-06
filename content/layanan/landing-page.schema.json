@@ -1,0 +1,92 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Landing Page"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Pembuatan Landing Page",
+      "serviceType": "Landing Page Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "OOS NEXA"
+      },
+      "areaServed": "ID"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu landing page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Landing page adalah halaman web tunggal yang dibuat untuk satu tujuan, misalnya mendapatkan pendaftaran, pesanan, atau konsultasi. Biasanya digunakan sebagai halaman tujuan dari iklan dan campaign promosi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya landing page dengan website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website berisi banyak halaman untuk memperkenalkan bisnis secara menyeluruh, sedangkan landing page hanya berfokus pada satu penawaran dan satu tindakan. Karena lebih fokus, landing page lebih cocok untuk iklan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah landing page cocok untuk iklan Meta Ads dan Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cocok. Landing page membantu pesan iklan dan isi halaman tetap selaras, sehingga pengunjung lebih mudah mengambil tindakan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah tombol bisa langsung terhubung ke WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Tombol aksi dapat diarahkan ke WhatsApp dengan pesan otomatis, form pendaftaran, atau halaman pembayaran."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah landing page bisa dipasang tracking iklan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Landing page dapat dipasang alat pengukuran seperti Meta Pixel dan Google Analytics untuk memantau hasil campaign."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan landing page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung jumlah section, kesiapan materi, dan integrasi yang dibutuhkan. Estimasi disampaikan setelah kebutuhan cukup jelas."
+          }
+        }
+      ]
+    }
+  ]
+}

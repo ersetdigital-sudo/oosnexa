@@ -25,8 +25,8 @@ export default function ClientScripts() {
     const yr = document.getElementById("yr");
     if (yr) yr.textContent = String(new Date().getFullYear());
 
-    // reveal on scroll
-    const els = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
+    // reveal on scroll (.reveal = halaman lama, .rv = mockup v2)
+    const els = Array.from(document.querySelectorAll<HTMLElement>(".reveal, .rv"));
     if (!els.length) return;
 
     if ("IntersectionObserver" in window) {

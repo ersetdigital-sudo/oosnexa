@@ -1,0 +1,92 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CRM"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Pembuatan CRM Custom",
+      "serviceType": "Customer Relationship Management",
+      "provider": {
+        "@type": "Organization",
+        "name": "OOS NEXA"
+      },
+      "areaServed": "ID"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CRM (Customer Relationship Management) adalah sistem untuk mengelola data pelanggan, riwayat transaksi, dan proses follow-up dalam satu tempat. Tujuannya agar bisnis bisa melayani pelanggan lebih konsisten dan tidak kehilangan peluang penjualan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya CRM custom dengan CRM siap pakai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CRM siap pakai memiliki fitur dan tahapan yang sudah ditentukan, serta biasanya dibayar per pengguna. CRM custom dibangun mengikuti alur penjualan bisnis Anda, sehingga field data, tahapan pipeline, dan laporannya bisa disesuaikan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisnis kecil perlu CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perlu jika jumlah pelanggan dan prospek mulai sulit dilacak secara manual. CRM bisa dimulai dari fitur sederhana seperti database pelanggan dan pengingat follow-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah CRM bisa terhubung dengan WhatsApp dan website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa, sesuai kebutuhan. Prospek dari form website dapat masuk otomatis ke CRM, dan integrasi dengan WhatsApp dapat dibahas berdasarkan layanan yang digunakan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah data pelanggan lama bisa dipindahkan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Umumnya bisa, terutama jika data tersedia dalam spreadsheet. Proses migrasi dibahas pada tahap analisis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan CRM custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung jumlah modul, integrasi, dan kompleksitas alur penjualan. Estimasi disampaikan setelah kebutuhan cukup jelas."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -41,7 +41,7 @@ export default function PortfolioPage() {
                   <h3>Erlangga Rental Mobil</h3>
                   <p>
                     Booking, kontrak sewa, nota thermal, sampai laporan keuangan bulanan —
-                    satu aplikasi PWA yang dipakai langsung dari HP di lapangan.
+                    satu sistem PWA yang dipakai langsung dari HP di lapangan.
                   </p>
                   <div className="pf-tags">
                     <em>Next.js</em>

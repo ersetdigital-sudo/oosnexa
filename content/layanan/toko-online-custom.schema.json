@@ -1,0 +1,92 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Toko Online Custom"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Pembuatan Toko Online Custom",
+      "serviceType": "E-Commerce Website Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "OOS NEXA"
+      },
+      "areaServed": "ID"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu toko online custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toko online custom adalah website e-commerce yang dibangun khusus untuk satu bisnis, dengan domain, tampilan, dan fitur milik sendiri. Berbeda dengan marketplace, toko ini sepenuhnya dikelola oleh pemilik bisnis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah tetap perlu berjualan di marketplace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tidak harus memilih salah satu. Banyak bisnis tetap memakai marketplace untuk menjangkau pembeli baru, dan toko online sendiri untuk pelanggan setia serta penjualan tanpa komisi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Metode pembayaran apa saja yang bisa digunakan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toko online custom dapat menggunakan transfer bank dengan konfirmasi, maupun payment gateway yang mendukung e-wallet, virtual account, dan kartu. Pilihan disesuaikan dengan kebutuhan bisnis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah ongkos kirim bisa dihitung otomatis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Ongkos kirim dapat dihitung otomatis melalui integrasi dengan layanan pengiriman sesuai alamat pembeli."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah stok bisa tersambung dengan toko offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Toko online dapat diintegrasikan dengan sistem POS dan inventory sehingga stok online dan offline tetap sinkron."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan toko online custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung jumlah fitur, integrasi pembayaran dan pengiriman, serta jumlah produk. Estimasi disampaikan setelah kebutuhan cukup jelas."
+          }
+        }
+      ]
+    }
+  ]
+}

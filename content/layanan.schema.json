@@ -1,0 +1,178 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Layanan OOS NEXA",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "Jasa Pembuatan Website Custom",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "Landing Page",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "Sistem POS dan Inventory",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Business Dashboard",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Service",
+            "name": "CRM",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Service",
+            "name": "Custom Web App",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Service",
+            "name": "Toko Online Custom",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Service",
+            "name": "Integrasi API & Automasi",
+            "provider": {
+              "@type": "Organization",
+              "name": "OOS NEXA"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Layanan apa saja yang disediakan OOS NEXA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OOS NEXA menyediakan jasa pembuatan website custom, landing page, sistem POS dan inventory, business dashboard, CRM, custom web app, e-commerce, serta integrasi API dan automasi. Semua layanan dibangun berdasarkan workflow bisnis masing-masing klien."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya website dan sistem bisnis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website berfungsi untuk memperkenalkan bisnis dan menjangkau calon pelanggan. Sistem bisnis seperti POS, dashboard, atau CRM digunakan tim untuk menjalankan operasional sehari-hari, misalnya mencatat transaksi, mengelola stok, atau memantau data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Saya belum tahu butuh layanan yang mana. Bagaimana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tidak masalah. Ceritakan saja bisnis dan masalah yang sedang dihadapi. Dari situ kami bantu menentukan apakah kebutuhannya lebih tepat diselesaikan dengan website, sistem bisnis, e-commerce, integrasi, atau kombinasinya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa mengambil satu layanan saja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Setiap layanan dapat berdiri sendiri. Jika nanti bisnis berkembang, layanan lain dapat ditambahkan dan dihubungkan dengan sistem yang sudah ada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa biaya layanan OOS NEXA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tidak ada harga paket yang sama untuk semua bisnis. Biaya ditentukan oleh scope, jumlah fitur, dan kompleksitas project, lalu dibahas setelah kebutuhan cukup jelas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah OOS NEXA melayani klien di luar kota?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya. Konsultasi, pembahasan kebutuhan, dan proses pengerjaan dapat dilakukan secara online."
+          }
+        }
+      ]
+    }
+  ]
+}

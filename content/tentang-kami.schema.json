@@ -1,0 +1,68 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tentang Kami",
+          "item": "/tentang-kami"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Dari mana saya bisa memulai konsultasi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mulai dengan menceritakan bisnis dan kebutuhan yang sedang Anda hadapi. Anda tidak perlu menyiapkan spesifikasi teknis terlebih dahulu. Kami dapat mulai dari memahami proses kerja, masalah yang muncul, dan bagian mana yang ingin dibuat atau diperbaiki."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah OOS NEXA mengerjakan project secara jarak jauh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, project dapat dikerjakan secara jarak jauh. Komunikasi dan pembahasan kebutuhan dapat dilakukan secara online, dengan alur kerja yang disesuaikan dengan kebutuhan project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana alur kerja sama dengan OOS NEXA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alurnya dimulai dari konsultasi, analisis kebutuhan, development, testing, lalu deployment. Setiap tahap digunakan untuk memastikan kebutuhan dan scope project dipahami sebelum masuk ke tahap berikutnya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa hanya membuat website saja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Anda tidak harus mengambil seluruh layanan. Jika kebutuhan Anda hanya website atau landing page, project dapat difokuskan pada kebutuhan tersebut."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa yang terjadi setelah project selesai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Setelah deployment, sistem diserahkan untuk digunakan sesuai scope yang telah disepakati. Jika setelahnya membutuhkan perbaikan, pengembangan fitur, update, atau kebutuhan teknis lainnya, hal tersebut dapat dibahas sesuai kebutuhan."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 type CaseCoverProps = {
   /** Kata besar bergaya outline di background */
   ghost: string;
-  /** Label kecil di atas, mis. "Kenapa tanpa tampilan aplikasi?" */
+  /** Label kecil di atas, mis. "Kenapa tanpa tampilan sistem?" */
   label: string;
   /** Chip modul / kapabilitas */
   chips: string[];

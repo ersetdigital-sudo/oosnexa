@@ -1,0 +1,72 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "OOS NEXA",
+      "url": "/",
+      "logo": "/images/logo-on.png",
+      "slogan": "Build Better Grow Smarter"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "OOS NEXA",
+      "url": "/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Berapa biaya membuat website atau sistem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Biayanya tergantung scope dan kebutuhan project. Jumlah halaman, fitur, integrasi, kompleksitas workflow, dan kebutuhan teknis dapat memengaruhi ruang lingkup pengerjaan. Karena itu, kami menentukan kebutuhan terlebih dahulu sebelum membahas estimasi. Kalau Anda membutuhkan estimasi, ceritakan dulu kebutuhan dan sistem yang ingin dibuat agar scope project dapat dipahami dengan lebih jelas. Minta Estimasi Project"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pengerjaannya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung kompleksitas dan scope project. Website sederhana tentu memiliki kebutuhan yang berbeda dengan sistem yang membutuhkan database, dashboard, integrasi, atau workflow khusus. Estimasi dibahas setelah kebutuhan cukup jelas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah setelah jadi saya bisa update kontennya sendiri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa, jika sistemnya memang dirancang dengan pengelolaan konten dari sisi admin. Struktur pengelolaannya akan disesuaikan dengan jenis website atau sistem yang dibangun dan kebutuhan tim yang menggunakannya."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Setelah sistem jadi, apakah ada perawatan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perawatan dapat dibahas sesuai kebutuhan project. Setelah sistem digunakan, kebutuhan update, perbaikan, pengembangan fitur, atau perubahan integrasi bisa berbeda untuk setiap bisnis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya sistem custom dengan software jadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sistem custom dibuat mengikuti kebutuhan dan workflow bisnis tertentu. Software jadi biasanya sudah memiliki struktur dan fitur yang ditentukan sebelumnya. Jika proses bisnis Anda memiliki kebutuhan khusus, pendekatan custom dapat memberikan ruang penyesuaian yang lebih besar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana cara memulainya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mulai dengan menceritakan bisnis dan masalah yang sedang Anda hadapi. Tidak perlu menyiapkan spesifikasi teknis yang rumit. Kami bisa mulai dari memahami proses kerja Anda, lalu membahas bagian mana yang memang perlu dibuat atau diperbaiki."
+          }
+        }
+      ]
+    }
+  ]
+}

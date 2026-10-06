@@ -27,3 +27,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 # cloned reference repos (bukan bagian project)
+
+# mockup redesign v2 — fonts sudah ada di /public/fonts (jangan di-commit dobel)
+/redesign web oos nexa v2/fonts/

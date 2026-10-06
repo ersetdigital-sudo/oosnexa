@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jasa Integrasi API &amp; Automasi | OOS NEXA</title>
+<meta name="description" content="Jasa integrasi API dan automasi workflow untuk bisnis di Indonesia. Hubungkan website, toko online, pembayaran, dan laporan agar data mengalir otomatis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"/"},
+{"@type":"ListItem","position":2,"name":"Layanan","item":"/layanan"},
+{"@type":"ListItem","position":3,"name":"Integrasi API & Automasi"}]}
+</script>
+<style>
+:root{--bg:#0E0E11;--bg2:#141419;--bg3:#1C1C20;--tx:#FFFFFF;--mu:#9A9AA3;--ac:#FF6B35;--ach:#FF8A5E;--ln:#29292F;--hf:'Plus Jakarta Sans',sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--hf);margin:0;letter-spacing:-.02em;line-height:1.15}
+p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:88px 0;background:var(--bg);color:var(--tx)}
+.light{--bg:#F7F7F5;--bg2:#FFFFFF;--bg3:#FFFFFF;--tx:#0E0E11;--mu:#55555D;--ln:#E6E6E8}
+.light .cell{background:#fff}.light .cell:hover{background:#FBFBFA}
+.light .node{background:#fff;border-color:#E7E7EA}
+.ico{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid rgba(255,107,53,.35);border-radius:8px}
+.hero-art{position:absolute;right:-48px;top:-24px;width:240px;height:240px;opacity:.22;pointer-events:none;display:block;z-index:0}
+.hero-g>div{position:relative;z-index:1}
+@media(min-width:1000px){.hero-art{right:0;top:40px;width:420px;height:420px;opacity:.5}}
+.eyebrow{display:block;color:var(--ac);font-family:var(--hf);font-weight:600;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+
+h2{font-size:clamp(28px,4.4vw,42px);max-width:640px}
+.lead{color:var(--mu);margin-top:16px;max-width:600px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.btn-p{background:var(--ac);color:#FFFFFF}.btn-p:hover{background:var(--ach);transform:translateY(-1px)}
+.btn-g{border:1px solid rgba(255,255,255,.18);color:var(--tx)}.btn-g:hover{border-color:var(--ac)}
+svg.i{width:24px;height:24px;stroke:var(--ac);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(14,14,17,.94);border-bottom:1px solid var(--ln)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--hf);font-weight:800;font-size:19px;text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--ac)}
+.menu{display:none;list-style:none;margin:0;padding:0;gap:32px;align-items:center}
+.menu a{text-decoration:none;color:var(--mu);font-size:15px;transition:color .2s}
+.menu a:hover,.menu a[aria-current]{color:var(--tx)}
+.menu .btn{color:#FFFFFF;padding:10px 18px}
+.burger{background:none;border:1px solid var(--ln);border-radius:6px;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.burger svg{stroke:var(--tx);width:22px;height:22px;fill:none;stroke-width:1.8}
+.mob{display:none;border-top:1px solid var(--ln);padding:12px 20px 24px}
+.mob.open{display:block}
+.mob ul{list-style:none;margin:0;padding:0}
+.mob li a{display:block;padding:14px 0;border-bottom:1px solid var(--ln);text-decoration:none;color:var(--mu)}
+.mob .btn{margin-top:20px;width:100%;justify-content:center;border:0;color:#FFFFFF}
+@media(min-width:900px){.menu{display:flex}.burger,.mob,.mob.open{display:none}}
+/* breadcrumb */
+.bc ol{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:24px 0 0;margin:0;font-size:14px;color:var(--mu)}
+.bc li+li::before{content:"/";margin-right:8px;opacity:.5}
+.bc a{text-decoration:none}.bc a:hover{color:var(--ach)}
+.bc [aria-current]{color:var(--tx)}
+/* hero */
+.hero{padding:64px 0 104px;position:relative;overflow:hidden}.hero .wrap{position:relative}
+.hero-g{display:grid;gap:56px}.hero-g>div:first-of-type{max-width:640px}
+.hero h1{font-size:clamp(36px,6.4vw,64px);font-weight:800;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--ac)}
+.hero p{color:var(--mu);font-size:18px;margin-top:24px;max-width:600px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-meta{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--ln);margin-top:8px}
+.hero-meta div{padding:20px 16px 0 0;font-size:14px;color:var(--mu)}
+.hero-meta strong{display:block;color:var(--tx);font-family:var(--hf);font-size:15px;margin-bottom:2px}
+@media(min-width:720px){.hero-meta{grid-template-columns:repeat(4,1fr)}}
+/* who */
+.grid{display:grid;gap:1px;background:var(--ln);border:1px solid var(--ln);margin-top:48px}
+.cell{background:var(--bg);padding:32px 28px;transition:background .2s}
+.cell:hover{background:var(--bg2)}
+.cell h3{font-size:19px;margin:18px 0 10px}
+.cell p{color:var(--mu);font-size:15px}
+.num{font-family:var(--hf);color:var(--ac);font-size:13px;font-weight:700;letter-spacing:.1em}
+@media(min-width:720px){.g2{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.g4{grid-template-columns:repeat(4,1fr)}}
+/* problems */
+.pb{margin-top:48px;border-top:1px solid var(--ln)}
+.pb article{display:grid;gap:12px;padding:28px 0;border-bottom:1px solid var(--ln)}
+.pb h3{font-size:18px;color:var(--mu);font-weight:600;text-decoration:line-through;text-decoration-color:rgba(255,107,53,.5)}
+.pb .arr{display:none}
+.pb .sol{display:flex;gap:12px}
+.pb .sol p{color:var(--tx)}
+.pb .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);margin-bottom:4px}
+@media(min-width:820px){.pb article{grid-template-columns:1fr 48px 1.3fr;align-items:center}.pb .arr{display:block}}
+/* process */
+.steps{list-style:none;padding:0;margin:48px 0 0;display:grid;gap:0;border-top:1px solid var(--ln)}
+.steps li{padding:28px 0;border-bottom:1px solid var(--ln);display:grid;grid-template-columns:56px 1fr;gap:8px}
+.steps h3{font-size:19px;margin-bottom:6px}
+.steps p{color:var(--mu);font-size:15px}
+@media(min-width:1000px){.steps{grid-template-columns:repeat(5,1fr);border-top:0}.steps li{display:block;border-bottom:0;border-top:1px solid var(--ln);padding:28px 24px 0 0;position:relative}.steps .num{display:block;margin-bottom:16px}}
+/* flow */
+.flow{margin-top:48px;display:grid;gap:0;align-items:center}
+.node{background:var(--bg2);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:22px}
+.node h3{font-size:17px;margin:12px 0 4px}
+.node p{color:var(--mu);font-size:14px}
+.node .tag{font-size:12px;color:var(--mu);letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.node .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ac)}
+.hub{border-color:rgba(255,107,53,.55);background:var(--bg3)}
+.conn{height:36px;width:1px;background:repeating-linear-gradient(to bottom,var(--ac) 0 4px,transparent 4px 8px);margin:0 auto}
+.outs{display:grid;gap:12px}
+@media(min-width:900px){.flow{grid-template-columns:1fr 64px 1fr 64px 1.1fr}.conn{width:100%;height:1px;background:repeating-linear-gradient(to right,var(--ac) 0 4px,transparent 4px 8px)}}
+.note{color:var(--mu);font-size:14px;margin-top:24px}
+/* faq */
+.faq{margin-top:40px;border-top:1px solid var(--ln);max-width:820px}
+details{border-bottom:1px solid var(--ln)}
+summary{list-style:none;cursor:pointer;padding:24px 40px 24px 0;position:relative;font-family:var(--hf);font-weight:600;font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:32px;width:10px;height:10px;border-right:1.6px solid var(--ac);border-bottom:1.6px solid var(--ac);transform:rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg);top:36px}
+details p{color:var(--mu);padding:0 0 24px;max-width:700px}
+/* cta */
+.cta-box{border:1px solid var(--ln);background:var(--bg2);padding:48px 28px;position:relative;overflow:hidden}
+
+.cta-box p{color:var(--mu);margin:16px 0 32px;max-width:540px}
+@media(min-width:720px){.cta-box{padding:72px 64px}}
+.ctasec{padding-top:0}
+/* links */
+.links{padding:56px 0}
+.links ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.links a{display:inline-flex;gap:10px;align-items:center;text-decoration:none;font-family:var(--hf);font-size:18px;font-weight:600;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.links a:hover{color:var(--ach);border-color:var(--ach)}
+@media(min-width:820px){.links ul{grid-template-columns:repeat(3,1fr)}}
+footer{border-top:1px solid var(--ln);background:var(--bg);padding:56px 0 32px}
+.ft{display:grid;gap:40px}
+.ft h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);font-family:Inter,sans-serif;font-weight:500;margin-bottom:16px}
+.ft ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.ft ul a{text-decoration:none;color:var(--tx)}.ft ul a:hover{color:var(--ach)}
+.tag-l{color:var(--mu);margin-top:8px}
+.copy{border-top:1px solid var(--ln);margin-top:48px;padding-top:24px;color:var(--mu);font-size:14px}
+@media(min-width:820px){.ft{grid-template-columns:2fr 1fr 1fr}}
+.rv{opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+.hero-mob{margin-top:40px;border:1px solid #29292F;border-radius:8px;background:#0E0E11;padding:14px 8px;position:relative}.hero-mob::before{content:"Alur data";position:absolute;top:-9px;left:16px;background:#0E0E11;padding:0 8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#FF6B35}.hero-mob svg{width:100%;height:auto;display:block}
+@media(max-width:999px){.hero-art{display:none!important}}@media(min-width:1000px){.hero-mob{display:none}}
+</style>
+<script src="https://cdn.moda.app/runtime-libs/tailwind-browser-4.1.13-index.global.min.js"></script><style data-moda-export-fonts="true">@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-thin.ttf") format("truetype"); font-style: normal; font-weight: 100; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-thinitalic.ttf") format("truetype"); font-style: italic; font-weight: 100; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-extralight.ttf") format("truetype"); font-style: normal; font-weight: 200; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-extralightitalic.ttf") format("truetype"); font-style: italic; font-weight: 200; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-light.ttf") format("truetype"); font-style: normal; font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-lightitalic.ttf") format("truetype"); font-style: italic; font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-italic.ttf") format("truetype"); font-style: italic; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-medium.ttf") format("truetype"); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-mediumitalic.ttf") format("truetype"); font-style: italic; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-semibold.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-semibolditalic.ttf") format("truetype"); font-style: italic; font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-bold.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-bolditalic.ttf") format("truetype"); font-style: italic; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-extrabold.ttf") format("truetype"); font-style: normal; font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-extrabolditalic.ttf") format("truetype"); font-style: italic; font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-black.ttf") format("truetype"); font-style: normal; font-weight: 900; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url("../../../fonts/inter_24pt-blackitalic.ttf") format("truetype"); font-style: italic; font-weight: 900; font-display: swap; }</style></head>
+<body>
+<header>
+  <nav class="wrap nav" aria-label="Navigasi utama">
+    <a href="/" class="logo">OOS <span>NEXA</span></a>
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/layanan" aria-current="page">Layanan</a></li>
+      <li><a href="/portofolio">Portofolio</a></li>
+      <li><a href="/tentang-kami">Tentang Kami</a></li>
+      <li><a href="#kontak" class="btn btn-p">Konsultasi Gratis</a></li>
+    </ul>
+    <button class="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="mobmenu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+  </nav>
+  <div class="mob" id="mobmenu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/layanan">Layanan</a></li>
+      <li><a href="/portofolio">Portofolio</a></li>
+      <li><a href="/tentang-kami">Tentang Kami</a></li>
+    </ul>
+    <a href="#kontak" class="btn btn-p">Konsultasi Gratis</a>
+  </div>
+</header>
+
+<main>
+  <nav class="wrap bc" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/layanan">Layanan</a></li>
+      <li><span aria-current="page">Integrasi API &amp; Automasi</span></li>
+    </ol>
+  </nav>
+
+  <section class="hero">
+    <div class="wrap hero-g"><svg class="hero-art" viewBox="0 0 420 420" fill="none" aria-hidden="true"><g stroke="#29292F"><path d="M0 105h420M0 210h420M0 315h420M105 0v420M210 0v420M315 0v420"></path></g><g stroke="#FF6B35" stroke-width="1.4"><path d="M105 105h105v105h105"></path><path d="M210 210v105h105" stroke-dasharray="4 6"></path></g><g fill="#0E0E11" stroke="#FF6B35" stroke-width="1.4"><rect x="97" y="97" width="16" height="16"></rect><rect x="202" y="202" width="16" height="16" fill="#FF6B35"></rect><rect x="307" y="202" width="16" height="16"></rect><rect x="307" y="307" width="16" height="16"></rect></g></svg>
+      <div>
+        <div class="eyebrow">Jasa Integrasi API &amp; Automasi</div>
+        <h1>Integrasikan Sistem Bisnis Anda dalam <em>Satu Alur Kerja</em></h1>
+        <p>Kami menghubungkan website, toko online, pembayaran, dan sistem internal yang sudah Anda pakai lewat integrasi API, sehingga data berpindah sendiri tanpa diketik ulang. Order langsung tercatat, stok ikut tersinkron, tim menerima notifikasi, dan laporan selalu terbarui. Hasilnya, pekerjaan manual berkurang dan tim bisa fokus ke hal yang lebih penting.</p>
+        <div class="ctas">
+          <a href="#kontak" class="btn btn-p">Konsultasi Gratis
+            <svg class="i" style="stroke:#FFFFFF;width:18px;height:18px" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+          <a href="#proses" class="btn btn-g">Lihat Proses Kerja</a>
+        </div><div class="hero-mob" aria-hidden="true"><svg viewBox="0 0 340 210" fill="none">
+<g stroke="#232329"><path d="M0 35h340M0 105h340M0 175h340M57 0v210M170 0v210M283 0v210"></path></g>
+<g stroke="#FF6B35" stroke-width="1.3"><path d="M84 105h48"></path><path d="M208 105h30v-70h18M238 105h18M238 105v70h18"></path></g>
+<g stroke="#FF6B35" stroke-width="1.3" stroke-dasharray="3 5" opacity=".6"><path d="M57 35v52M57 123v52"></path></g>
+<rect x="14" y="88" width="70" height="34" rx="4" fill="#141419" stroke="#3A3A42"></rect><text x="49" y="109" fill="#fff" font-size="11" font-family="Inter" text-anchor="middle">Website</text>
+<rect x="132" y="84" width="76" height="42" rx="4" fill="#1C1C20" stroke="#FF6B35"></rect><text x="170" y="103" fill="#fff" font-size="11" font-weight="600" font-family="Plus Jakarta Sans" text-anchor="middle">Sistem</text><text x="170" y="117" fill="#9A9AA3" font-size="9" font-family="Inter" text-anchor="middle">Pusat</text>
+<g font-family="Inter" font-size="10" fill="#9A9AA3"><rect x="256" y="22" width="70" height="26" rx="4" fill="#141419" stroke="#3A3A42"></rect><text x="291" y="39" text-anchor="middle">Stok</text><rect x="256" y="92" width="70" height="26" rx="4" fill="#141419" stroke="#3A3A42"></rect><text x="291" y="109" text-anchor="middle">Notifikasi</text><rect x="256" y="162" width="70" height="26" rx="4" fill="#141419" stroke="#3A3A42"></rect><text x="291" y="179" text-anchor="middle">Laporan</text></g>
+<g fill="#FF6B35"><rect x="235" y="102" width="6" height="6"></rect><circle cx="57" cy="35" r="3"></circle><circle cx="57" cy="175" r="3"></circle></g>
+<g font-family="Inter" font-size="9" fill="#6B6B73"><text x="66" y="38">Payment</text><text x="66" y="178">Marketplace</text></g>
+</svg></div>
+      </div>
+      <div class="hero-meta">
+        <div><strong>Payment</strong>Status bayar otomatis</div>
+        <div><strong>Order</strong>Tercatat tanpa input ulang</div>
+        <div><strong>Stok</strong>Sinkron antar kanal</div>
+        <div><strong>Laporan</strong>Terbarui sendiri</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" aria-labelledby="siapa">
+    <div class="wrap">
+      <div class="eyebrow">Kebutuhan umum</div>
+      <h2 id="siapa">Untuk Siapa Ini?</h2>
+      <p class="lead">Jika salah satu situasi di bawah terasa familiar, kemungkinan besar sebagian pekerjaan tim Anda bisa diotomatisasi.</p>
+      <div class="grid g2">
+        <article class="cell rv">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 8H7"></path><circle cx="9" cy="19" r="1.4"></circle><circle cx="17" cy="19" r="1.4"></circle></svg></span>
+          <h3>Toko online yang order-nya masih disalin manual</h3>
+          <p>Setiap pesanan dari website atau marketplace dipindahkan satu per satu ke spreadsheet atau sistem internal. Dengan integrasi, order masuk langsung tercatat di tempat yang benar.</p>
+        </article>
+        <article class="cell rv">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.8A8 8 0 1 1 8 19.2z"></path><path d="M9 11h6M9 14h4"></path></svg></span>
+          <h3>Bisnis yang mengandalkan WhatsApp dan spreadsheet</h3>
+          <p>Data pelanggan dan pesanan dicatat dari percakapan chat, lalu diketik lagi ke spreadsheet. Alurnya bisa dibuat lebih rapi agar data tersimpan otomatis dan mudah dicari.</p>
+        </article>
+        <article class="cell rv">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="8.5" y="14" width="7" height="7" rx="1"></rect><path d="M6.5 10v2h11v-2M12 12v2"></path></svg></span>
+          <h3>Data tersebar di banyak sumber</h3>
+          <p>Penjualan ada di satu tempat, pembayaran di tempat lain, stok di file terpisah. Kami bantu menggabungkannya ke satu sistem pusat atau dashboard.</p>
+        </article>
+        <article class="cell rv">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"></path><path d="M10 21h4"></path></svg></span>
+          <h3>Tim yang butuh notifikasi otomatis</h3>
+          <p>Tim gudang, admin, atau finance perlu tahu saat ada order baru, pembayaran masuk, atau status berubah, tanpa harus menunggu dikabari manual.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="masalah">
+    <div class="wrap">
+      <div class="eyebrow">Masalah → Solusi</div>
+      <h2 id="masalah">Masalah yang Sering Terjadi</h2>
+      <div class="pb">
+        <article class="rv"><h3>Data harus diketik ulang di beberapa tempat</h3><svg class="i arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div class="sol"><div><div class="lbl">Solusi</div><p>Data dikirim otomatis antar sistem lewat API atau webhook, cukup diinput sekali.</p></div></div></article>
+        <article class="rv"><h3>Stok di website dan gudang tidak sama</h3><svg class="i arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div class="sol"><div><div class="lbl">Solusi</div><p>Sinkronisasi stok berjalan setiap ada transaksi, sehingga angka di semua kanal mengikuti satu sumber.</p></div></div></article>
+        <article class="rv"><h3>Laporan harus digabung manual setiap minggu</h3><svg class="i arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div class="sol"><div><div class="lbl">Solusi</div><p>Laporan ditarik dan disusun otomatis ke spreadsheet atau dashboard sesuai jadwal.</p></div></div></article>
+        <article class="rv"><h3>Kesalahan input yang baru ketahuan belakangan</h3><svg class="i arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div class="sol"><div><div class="lbl">Solusi</div><p>Validasi data di setiap alur dan pencatatan error membantu masalah terdeteksi lebih awal.</p></div></div></article>
+        <article class="rv"><h3>Sistem yang dipakai tidak saling terhubung</h3><svg class="i arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div class="sol"><div><div class="lbl">Solusi</div><p>Kami membangun penghubung antar sistem, termasuk sistem lama, tanpa harus mengganti semuanya.</p></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" aria-labelledby="termasuk">
+    <div class="wrap">
+      <div class="eyebrow">Cakupan layanan</div>
+      <h2 id="termasuk">Apa yang Termasuk</h2>
+      <p class="lead">Integrasi disusun sesuai kebutuhan. Berikut jenis pekerjaan yang paling sering kami tangani.</p>
+      <div class="grid g4">
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 10h18M7 15h4"></path></svg></span><h3>Integrasi payment gateway</h3><p>Status pembayaran terbarui otomatis di sistem Anda setelah pelanggan membayar.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.8A8 8 0 1 1 8 19.2z"></path></svg></span><h3>WhatsApp &amp; notifikasi otomatis</h3><p>Pesan konfirmasi ke pelanggan dan pemberitahuan ke tim terkirim berdasarkan kejadian tertentu.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"></path></svg></span><h3>Webhook &amp; API custom</h3><p>Endpoint dan webhook dibuat khusus agar sistem Anda bisa bertukar data dengan platform lain.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16"></path><path d="M9 14h6"></path></svg></span><h3>Sinkronisasi marketplace &amp; toko online</h3><p>Order, produk, dan stok dari berbagai kanal penjualan dikumpulkan ke satu tempat.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M4 9h16M4 15h16M10 3v18"></path></svg></span><h3>Automasi laporan &amp; spreadsheet</h3><p>Data penjualan dan operasional masuk ke spreadsheet atau laporan secara terjadwal.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span><h3>Integrasi email</h3><p>Invoice, konfirmasi, dan pemberitahuan dikirim via email ketika status tertentu tercapai.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"></ellipse><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"></path></svg></span><h3>Penghubung sistem lama &amp; database</h3><p>Sistem lama atau database internal tetap bisa dipakai dan dihubungkan ke alur baru.</p></article>
+        <article class="cell rv"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"></path></svg></span><h3>Monitoring &amp; error handling</h3><p>Log, percobaan ulang, dan peringatan disiapkan agar kegagalan pengiriman data cepat diketahui.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="proses" aria-labelledby="proses-h">
+    <div class="wrap">
+      <div class="eyebrow">Cara kami bekerja</div>
+      <h2 id="proses-h">Proses Kerja</h2>
+      <ol class="steps">
+        <li class="rv"><span class="num">01</span><div><h3>Konsultasi</h3><p>Memahami sistem, masalah, dan workflow yang sedang berjalan.</p></div></li>
+        <li class="rv"><span class="num">02</span><div><h3>Analisis</h3><p>Memetakan sumber data, endpoint, struktur data, dan kebutuhan integrasi.</p></div></li>
+        <li class="rv"><span class="num">03</span><div><h3>Development</h3><p>Membangun koneksi dan workflow sesuai kebutuhan yang sudah disepakati.</p></div></li>
+        <li class="rv"><span class="num">04</span><div><h3>Testing</h3><p>Menguji pertukaran data, termasuk skenario saat terjadi error.</p></div></li>
+        <li class="rv"><span class="num">05</span><div><h3>Deployment</h3><p>Menempatkan integrasi pada environment yang sesuai dan memastikan berjalan stabil.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="alur" style="padding-top:0">
+    <div class="wrap">
+      <div class="eyebrow">Contoh workflow</div>
+      <h2 id="alur">Alur yang Bisa Dibangun</h2>
+      <p class="lead">Satu order masuk bisa memicu beberapa proses sekaligus. Ini contoh alur yang umum untuk bisnis dengan toko online.</p>
+      <div class="flow" role="img" aria-label="Diagram alur: order masuk diteruskan ke sistem pusat, lalu memperbarui stok, mengirim notifikasi, dan memperbarui laporan">
+        <div class="node"><span class="tag">Trigger</span><h3>Order Masuk</h3><p>Dari website, marketplace, atau form pemesanan.</p></div>
+        <div class="conn"></div>
+        <div class="node hub"><span class="tag">Proses</span><h3>Sistem Pusat</h3><p>Validasi data, simpan order, lalu teruskan ke sistem terkait.</p></div>
+        <div class="conn"></div>
+        <div class="outs">
+          <div class="node"><span class="tag">Output</span><h3>Stok Update</h3></div>
+          <div class="node"><span class="tag">Output</span><h3>Notifikasi</h3></div>
+          <div class="node"><span class="tag">Output</span><h3>Laporan</h3></div>
+        </div>
+      </div>
+      <p class="note">Alur dapat disesuaikan dengan sistem dan urutan kerja di bisnis Anda.</p>
+    </div>
+  </section>
+
+  <section class="light" aria-labelledby="faq">
+    <div class="wrap">
+      <div class="eyebrow">FAQ</div>
+      <h2 id="faq">Pertanyaan Umum</h2>
+      <div class="faq">
+        <details><summary>Berapa lama pengerjaan integrasi API?</summary><p>Tergantung jumlah sistem yang dihubungkan, kelengkapan dokumentasi API, dan kompleksitas alurnya. Perkiraan waktu kami sampaikan setelah tahap analisis, saat kebutuhannya sudah jelas.</p></details>
+        <details><summary>Apakah bisa menggunakan sistem yang sudah ada?</summary><p>Umumnya bisa. Kami mulai dari sistem yang sudah Anda pakai, lalu mengecek apakah sistem tersebut menyediakan API, webhook, atau akses database. Jika aksesnya terbatas, kami diskusikan alternatif yang paling masuk akal.</p></details>
+        <details><summary>Bagaimana keamanan data?</summary><p>Kami menerapkan praktik standar seperti koneksi terenkripsi, penyimpanan kredensial yang terpisah, dan akses sesuai kebutuhan. Tidak ada sistem yang bebas risiko, jadi kami juga menyiapkan log dan monitoring agar masalah cepat terdeteksi.</p></details>
+        <details><summary>Apakah integrasi bisa ditambah nanti?</summary><p>Bisa. Integrasi dirancang bertahap, sehingga Anda dapat mulai dari alur yang paling mendesak lalu menambahkan koneksi baru seiring kebutuhan bisnis berkembang.</p></details>
+        <details><summary>Apa yang dibutuhkan di awal?</summary><p>Cukup gambaran sistem yang digunakan, proses yang masih manual, dan hasil yang diinginkan. Jika tersedia, akses atau dokumentasi API dari tiap sistem akan mempercepat analisis.</p></details>
+        <details><summary>Bagaimana proses konsultasinya?</summary><p>Anda menceritakan kondisi saat ini, lalu kami bantu memetakan bagian mana yang bisa diintegrasikan. Setelah itu kami sampaikan rekomendasi langkah dan ruang lingkup pekerjaannya.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" aria-labelledby="cta">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2 id="cta">Punya Sistem yang Perlu Terhubung?</h2>
+        <p>Ceritakan sistem yang Anda pakai dan bagian mana yang masih dikerjakan manual. Kami bantu melihat kemungkinan integrasinya.</p>
+        <a href="#kontak" class="btn btn-p">Konsultasi Gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="links light" aria-labelledby="lainnya">
+    <div class="wrap">
+      <div class="eyebrow" id="lainnya">Jelajahi juga</div>
+      <ul>
+        <li><a href="/layanan">Layanan pembuatan website <svg class="i" style="width:18px;height:18px" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a></li>
+        <li><a href="/portofolio">Lihat project yang pernah kami kerjakan <svg class="i" style="width:18px;height:18px" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a></li>
+        <li><a href="/tentang-kami">Tentang OOS NEXA <svg class="i" style="width:18px;height:18px" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><a href="/" class="logo">OOS <span>NEXA</span></a><p class="tag-l">Build Better Grow Smarter</p></div>
+      <nav aria-label="Menu footer"><h2>Menu</h2><ul><li><a href="/">Home</a></li><li><a href="/layanan">Layanan</a></li><li><a href="/portofolio">Portofolio</a></li><li><a href="/tentang-kami">Tentang Kami</a></li></ul></nav>
+      <div><h2>Kontak</h2><a href="#kontak" class="btn btn-p">Konsultasi Gratis</a></div>
+    </div>
+    <p class="copy">© OOS NEXA</p>
+  </div>
+</footer>
+
+<script>
+const b=document.querySelector('.burger'),m=document.getElementById('mobmenu');
+b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.setAttribute('aria-label',o?'Buka menu':'Tutup menu');m.classList.toggle('open',!o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Buka menu')}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('open')){b.click();b.focus()}});
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(el=>io.observe(el))}else{document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'))}
+</script>
+
+</body></html>

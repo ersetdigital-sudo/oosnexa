@@ -1,0 +1,92 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Web App"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Pembuatan Custom Web App",
+      "serviceType": "Custom Web Application Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "OOS NEXA"
+      },
+      "areaServed": "ID"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu custom web app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom web app adalah sistem berbasis web yang dibangun khusus untuk kebutuhan dan alur kerja satu bisnis. Sistem ini diakses lewat browser, tanpa instalasi, dari komputer maupun ponsel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya custom web app dengan website biasa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website biasa berfungsi menampilkan informasi, sedangkan custom web app digunakan untuk bekerja. Di dalamnya ada login, pengelolaan data, alur proses, dan hak akses pengguna."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kapan bisnis sebaiknya membuat custom web app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saat software siap pakai tidak sesuai alur kerja, atau saat proses masih bergantung pada spreadsheet dan chat yang sulit dikontrol. Custom web app juga cocok ketika data perlu diakses banyak orang dengan hak akses berbeda."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah custom web app bisa diakses dari HP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Tampilan dibuat responsif sehingga nyaman digunakan di komputer, tablet, dan ponsel melalui browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah sistem bisa dikembangkan setelah selesai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Custom web app dibangun per modul sehingga fitur baru dapat ditambahkan seiring pertumbuhan bisnis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan custom web app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung jumlah modul, integrasi, dan kompleksitas alur kerja. Estimasi disampaikan setelah tahap analisis kebutuhan."
+          }
+        }
+      ]
+    }
+  ]
+}

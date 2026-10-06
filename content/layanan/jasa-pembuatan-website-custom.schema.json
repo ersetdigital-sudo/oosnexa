@@ -1,0 +1,81 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Jasa Pembuatan Website Custom"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan website custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung pada scope dan kompleksitas website. Jumlah halaman, fitur, integrasi, kebutuhan konten, dan proses revisi dapat memengaruhi waktu pengerjaan. Estimasi dibahas setelah kebutuhan project cukup jelas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya website custom dengan template?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website custom dirancang berdasarkan kebutuhan bisnis, sedangkan template memiliki struktur yang sudah ditentukan sebelumnya. Dengan pendekatan custom, struktur, desain, fitur, dan alur website dapat disesuaikan dengan kebutuhan yang memang diperlukan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Setelah jadi, bisa update konten sendiri tidak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa, jika website dirancang dengan sistem pengelolaan konten yang mendukungnya. Kebutuhan pengelolaan konten dibahas sejak awal agar struktur yang dibuat sesuai dengan cara tim mengelola website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Domain dan hosting diurus bagaimana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Domain dan hosting dapat disiapkan sesuai kebutuhan project. Jika Anda sudah memiliki domain atau hosting, konfigurasi dapat disesuaikan dengan environment yang digunakan. Jika belum, kebutuhan domain dan hosting dapat dibahas pada tahap awal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah sudah termasuk SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website dapat disiapkan dengan fondasi SEO on-page. Ini mencakup struktur heading, title, meta description, URL, dan aspek teknis dasar yang relevan. Optimasi SEO lanjutan merupakan kebutuhan yang dapat dibahas secara terpisah sesuai scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Setelah jadi, ada perawatan tidak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perawatan dapat dibahas sesuai kebutuhan setelah website selesai. Kebutuhannya dapat berupa update konten, perbaikan, pengembangan fitur, atau penyesuaian teknis tertentu."
+          }
+        }
+      ]
+    }
+  ]
+}

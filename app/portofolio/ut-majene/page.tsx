@@ -45,7 +45,7 @@ export default function UTMajeneCaseStudyPage() {
 
             <CaseCover
               ghost="MAJENE"
-              label="Kenapa tanpa tampilan aplikasi?"
+              label="Kenapa tanpa tampilan sistem?"
               chips={["Upload Excel", "Data Pipeline", "Analitik", "Laporan Ekspor"]}
               note="Dashboard ini memuat data registrasi mahasiswa milik institusi. Karena
               datanya bersifat internal, tampilan sistem dan tautan aksesnya tidak kami

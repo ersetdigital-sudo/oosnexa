@@ -21,7 +21,7 @@ export default function ErlanggaRentalCaseStudyPage() {
             <span className="cs-kicker">Studi Kasus · Sistem Operasional · Rental Mobil</span>
             <h1>Erlangga Rental Mobil</h1>
             <p className="lead">
-              Satu aplikasi untuk menjalankan operasional harian rental mobil: dari booking
+              Satu sistem untuk menjalankan operasional harian rental mobil: dari booking
               dan kontrak sewa, sampai nota thermal dan laporan keuangan bulanan. Dipakai
               langsung dari HP, di lapangan.
             </p>
@@ -46,9 +46,9 @@ export default function ErlanggaRentalCaseStudyPage() {
 
             <CaseCover
               ghost="RENTAL"
-              label="Kenapa tanpa tampilan aplikasi?"
+              label="Kenapa tanpa tampilan sistem?"
               chips={["Armada & Pelanggan", "Booking & Kontrak", "Nota Thermal", "Laporan Keuangan"]}
-              note="Aplikasi ini menangani data pelanggan dan transaksi operasional yang
+              note="Sistem ini menangani data pelanggan dan transaksi operasional yang
               sebenarnya. Untuk menghormati privasi klien, tampilan sistem dan tautan
               aksesnya tidak kami tampilkan — yang dibagikan di halaman ini adalah cara
               kerja dan keputusan teknisnya."
@@ -94,7 +94,7 @@ export default function ErlanggaRentalCaseStudyPage() {
             </div>
             <div className="cs-card reveal">
               <span className="num-l">SEBELUM → SESUDAH</span>
-              <h3>Catat di banyak tempat → Satu aplikasi terhubung</h3>
+              <h3>Catat di banyak tempat → Satu sistem terhubung</h3>
               <p>
                 Armada, pelanggan, booking, kas, dan laporan saling terhubung: satu
                 transaksi langsung mengubah status mobil, kas, dan laporan sekaligus.
@@ -237,7 +237,7 @@ export default function ErlanggaRentalCaseStudyPage() {
             </div>
             <p className="desc" style={{ marginTop: "30px" }}>
               Dibangun mobile-first sebagai PWA: bisa di-install ke home screen HP dan
-              terasa seperti aplikasi native, tanpa perlu lewat app store.
+              berjalan mulus seperti web app, tanpa perlu lewat app store.
             </p>
           </div>
         </section>

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const MENU = [
   { href: "/", label: "Home" },
-  { href: "/#layanan", label: "Layanan" },
+  { href: "/layanan", label: "Layanan" },
   { href: "/portofolio", label: "Portofolio" },
   { href: "/tentang-kami", label: "Tentang Kami" },
 ];
@@ -33,25 +33,15 @@ export default function Nav() {
       setActive("/portofolio");
       return;
     }
+    if (pathname.startsWith("/layanan")) {
+      setActive("/layanan");
+      return;
+    }
     if (pathname.startsWith("/tentang-kami")) {
       setActive("/tentang-kami");
       return;
     }
-    if (pathname !== "/") {
-      setActive("");
-      return;
-    }
-
-    const update = () => {
-      const layanan = document.getElementById("layanan");
-      const inLayanan =
-        Boolean(layanan) &&
-        (layanan as HTMLElement).getBoundingClientRect().top <= window.innerHeight * 0.45;
-      setActive(inLayanan ? "/#layanan" : "/");
-    };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    return () => window.removeEventListener("scroll", update);
+    setActive(pathname === "/" ? "/" : "");
   }, [pathname]);
 
   return (

@@ -1,0 +1,91 @@
+{
+  "ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sistem POS dan Inventory"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Pembuatan Sistem POS dan Inventory",
+      "provider": {
+        "@type": "Organization",
+        "name": "OOS NEXA"
+      },
+      "areaServed": "ID"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu sistem POS dan inventory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sistem POS (point of sale) dan inventory adalah sistem untuk mencatat transaksi penjualan sekaligus mengelola stok barang. Setiap penjualan otomatis mengurangi stok, dan semua data tersusun menjadi laporan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa bedanya sistem POS custom dengan software kasir jadi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Software kasir jadi memiliki fitur dan alur yang sudah ditentukan. Sistem POS custom dibangun mengikuti alur bisnis Anda, sehingga fitur seperti harga khusus, multi cabang, atau laporan tertentu bisa disesuaikan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa digunakan untuk lebih dari satu cabang?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. Sistem dapat dirancang agar setiap cabang memiliki stok dan transaksi sendiri, dengan ringkasan gabungan untuk pemilik."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah data produk lama bisa dipindahkan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Umumnya bisa, terutama jika data tersedia dalam format spreadsheet. Proses pemindahan data dibahas pada tahap analisis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama pembuatan sistem POS dan inventory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Waktu pengerjaan tergantung jumlah fitur, modul, dan kompleksitas alur. Estimasi disampaikan setelah kebutuhan cukup jelas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa terhubung dengan toko online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa, jika dibutuhkan. Stok dan pesanan dapat disinkronkan dengan toko online atau sistem lain melalui integrasi API."
+          }
+        }
+      ]
+    }
+  ]
+}
