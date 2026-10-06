@@ -18,8 +18,10 @@ Landing page only — no database, no backend API, no external credentials.
   server restart itself — do NOT `docker compose restart web` afterwards; killing the
   process makes npm log a harmless but noisy `SIGTERM`/`command failed` block.
 - The page content is not JSX: `app/**/page.tsx` reads `content/**/*.html` from disk with
-  `readFileSync` and injects it via `dangerouslySetInnerHTML`. Editing those HTML files
-  changes the page; the JSON-LD comes from the matching `*.schema.json`.
+  `readFileSync` at MODULE scope and injects it via `dangerouslySetInnerHTML`. Those reads are
+  not in the module graph, so editing `content/**/*.html` (or `*.schema.json`) does NOT hot-reload —
+  run `docker compose -f docker-compose.base44.yml restart web` after such edits. Editing
+  `app/**/*.tsx` or `app/page.css` DOES hot-reload normally.
 - `allowedDevOrigins` in `next.config.ts` uses `BASE44_PUBLIC_HOST_SUFFIX` (injected by
   compose) so the preview origin can load dev assets/HMR. Restart the service after editing it.
 - Only env var is optional `NEXT_PUBLIC_SITE_URL` (`lib/site.ts`); it defaults to the
